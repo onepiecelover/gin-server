@@ -1,0 +1,6 @@
+Makefile
+api_log/*
+*.sh
+*.swp
+*.o
+config.json
