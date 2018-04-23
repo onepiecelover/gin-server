@@ -11,7 +11,7 @@ import (
 
 func main() {
 	glog.InitLogger()
-	db.InitDBConn()
+	db.InitMysqlDBConn()
 	router := gin.Default()
 	router.POST("/", api.HTTPRoute)
 	router.Run(":8080")
