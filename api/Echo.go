@@ -5,7 +5,6 @@ import (
 	"gin-server/glog"
 	"log"
 	"net/http"
-	"time"
 	"uframework/common"
 
 	"github.com/gin-gonic/gin"
@@ -35,6 +34,6 @@ func Echo(c *gin.Context, data interface{}) {
 	glog.DEBUG(req)
 	glog.INFOF("hehehe %s", req.Name)
 	c.JSON(http.StatusOK, gin.H{"status": "ok"})
-	time.Sleep(10 * time.Second)
+	//time.Sleep(10 * time.Second)
 	return
 }
